@@ -6,7 +6,7 @@ class CreateIndependants < ActiveRecord::Migration
       t.string :website_url
       t.string :phone
       t.string :image
-      t.string :bio
+      t.text :bio
       t.string :email
       t.text :address
 

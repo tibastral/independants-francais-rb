@@ -94,6 +94,7 @@ GEM
       railties (~> 3.1.0.rc1)
       sass (>= 3.1.4)
       sprockets (>= 2.0.0.beta.9)
+    simple_form (1.3.1)
     sprockets (2.0.0.beta.10)
       hike (~> 1.0)
       rack (~> 1.0)
@@ -120,6 +121,7 @@ DEPENDENCIES
   jquery-rails
   rails (= 3.1.0.rc4)
   sass-rails (~> 3.1.0.rc)
+  simple_form
   sqlite3
   turn
   uglifier
