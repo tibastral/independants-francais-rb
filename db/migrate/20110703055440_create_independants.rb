@@ -8,7 +8,10 @@ class CreateIndependants < ActiveRecord::Migration
       t.string :image
       t.text :bio
       t.string :email
-      t.text :address
+      t.string :address_1
+      t.string :address_2
+      t.string :zip
+      t.string :city
 
       t.timestamps
     end

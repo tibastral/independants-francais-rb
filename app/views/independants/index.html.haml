@@ -1,4 +1,4 @@
-%h1 Listing independants
+%h1 Liste des independants ruby/rails français
 
 %table
   %tr
@@ -8,7 +8,10 @@
     %th Phone
     %th Bio
     %th Email
-    %th Address
+    %th Address 1
+    %th Address 2
+    %th Zip
+    %th City
     %th
     %th
     %th
@@ -21,7 +24,10 @@
       %td= independant.phone
       %td= independant.bio
       %td= independant.email
-      %td= independant.address
+      %td= independant.address_1
+      %td= independant.address_2
+      %td= independant.zip
+      %td= independant.city
       %td= link_to 'Show', independant
       %td= link_to 'Edit', edit_independant_path(independant)
       %td= link_to 'Destroy', independant, :confirm => 'Are you sure?', :method => :delete

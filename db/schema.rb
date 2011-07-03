@@ -20,7 +20,10 @@ ActiveRecord::Schema.define(:version => 20110703055440) do
     t.string   "image"
     t.text     "bio"
     t.string   "email"
-    t.text     "address"
+    t.string   "address_1"
+    t.string   "address_2"
+    t.string   "zip"
+    t.string   "city"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
