@@ -1,0 +1,19 @@
+= simple_form_for @independant do |f|
+  -if @independant.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@independant.errors.count, "error")} prohibited this independant from being saved:"
+      %ul
+        - @independant.errors.full_messages.each do |msg|
+          %li= msg
+
+  = f.input :first_name
+  = f.input :last_name
+  = f.input :website_url
+  = f.input :phone
+  = f.input :image
+  = f.input :bio
+  = f.input :email
+  = f.input :address
+
+  .actions
+    = f.submit 'Save'

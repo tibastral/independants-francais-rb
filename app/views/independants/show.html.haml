@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @independant.first_name
+%p
+  %b Last name:
+  = @independant.last_name
+%p
+  %b Website url:
+  = @independant.website_url
+%p
+  %b Phone:
+  = @independant.phone
+%p
+  %b Image:
+  = @independant.image
+%p
+  %b Bio:
+  = @independant.bio
+%p
+  %b Email:
+  = @independant.email
+%p
+  %b Address:
+  = @independant.address
+
+= link_to 'Edit', edit_independant_path(@independant)
+\|
+= link_to 'Back', independants_path

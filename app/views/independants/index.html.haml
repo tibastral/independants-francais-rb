@@ -1,0 +1,33 @@
+%h1 Listing independants
+
+%table
+  %tr
+    %th First name
+    %th Last name
+    %th Website url
+    %th Phone
+    %th Image
+    %th Bio
+    %th Email
+    %th Address
+    %th
+    %th
+    %th
+
+  - @independants.each do |independant|
+    %tr
+      %td= independant.first_name
+      %td= independant.last_name
+      %td= independant.website_url
+      %td= independant.phone
+      %td= independant.image
+      %td= independant.bio
+      %td= independant.email
+      %td= independant.address
+      %td= link_to 'Show', independant
+      %td= link_to 'Edit', edit_independant_path(independant)
+      %td= link_to 'Destroy', independant, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Independant', new_independant_path
